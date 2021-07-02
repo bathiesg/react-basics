@@ -5,6 +5,8 @@ import Propiedades from './components/Propiedades';
 import Estado from './components/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional';
 import RenderizadoElementos from './components/RenderizadoElementos';
+import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
+
 
 function App() {
   return (
