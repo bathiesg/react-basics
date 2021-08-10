@@ -7,6 +7,11 @@ import RenderizadoCondicional from './components/RenderizadoCondicional';
 import RenderizadoElementos from './components/RenderizadoElementos';
 import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
 
+import ComunicacionComponentes from './components/ComunicacionComponentes';
+import CicloVida from './components/CicloVida';
+
+import AjaxApis from './components/AjaxApis'
+import TimerHooks from './components/TimerHooks';
 
 function App() {
   return (
@@ -53,6 +58,29 @@ function App() {
           <RenderizadoElementos />
           <hr />
 
+
+          <EventosES6 />
+          <hr />
+
+
+          <EventosES7 />
+          <hr />
+
+
+          <MasSobreEventos />
+          <hr />
+
+          <ComunicacionComponentes />
+          <hr />
+
+          <CicloVida />
+          <hr />
+
+          <AjaxApis />
+          <hr />
+
+          <TimerHooks />
+          <hr />
         </section>
       </header>
     </div>

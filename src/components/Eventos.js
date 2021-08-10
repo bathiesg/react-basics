@@ -42,6 +42,7 @@ export class EventosES6 extends Component {
 }
 
 //Properties Initializer
+//no constructor needed, functions are now arrow functions which take automatically the class context (this), there is not need to bind functions
 export class EventosES7 extends Component {
   state = {
     contador: 0,
@@ -86,7 +87,7 @@ export class EventosES7 extends Component {
   <button onClick={props.myOnClick}>Botón hecho componente</button>
 ); */
 
-const Boton = ({ myOnClick }) => (
+const Boton = ({ myOnClick }) => ( //myOnClick is the personalized event contented inside the props
   <button onClick={myOnClick}>Botón hecho componente</button>
 );
 

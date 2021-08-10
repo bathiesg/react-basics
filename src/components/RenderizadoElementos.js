@@ -4,7 +4,7 @@ import data from "../helpers/data.json";
 function ElementoLista(props) {
   return (
     <li>
-      <a href={props.el.web} target="_blank">
+      <a href={props.el.web} target="_blank"  rel="noopener noreferrer">
         {props.el.name}
       </a>
     </li>
