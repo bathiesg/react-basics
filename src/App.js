@@ -12,6 +12,7 @@ import CicloVida from './components/CicloVida';
 
 import AjaxApis from './components/AjaxApis'
 import TimerHooks from './components/TimerHooks';
+import AjaxHooks from './components/AjaxHooks';
 
 function App() {
   return (
@@ -80,6 +81,8 @@ function App() {
           <hr />
 
           <TimerHooks />
+          <hr />
+          <AjaxHooks />
           <hr />
         </section>
       </header>
