@@ -8,14 +8,14 @@ function Watch({timer}) {
         <><h3>{timer}</h3></>
     )
 }
-
+/*
 const addSecondsToDate = (date, delay) => {  
     date = new Date(date)
     date.setSeconds(date.getSeconds() + delay)
   
     return date
   }
-
+*/
   const displayTime = (startDate)=> {
     startDate = new Date(startDate);
     const endDate = new Date();
@@ -31,19 +31,19 @@ const addSecondsToDate = (date, delay) => {
     var hours = Math.floor(seconds / 3600);
     seconds %= 3600;
     var minutes = Math.floor(seconds / 60);
-    var seconds = Math.ceil(seconds % 60);
+    seconds = Math.ceil(seconds % 60);
 
     return String(hours).padStart(2, '0') + ":" + String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0')
 }
 
 export default function TimerHooks() {
-    const [timeString, setTimeString] = useState(new Date());
-    const [visible, setVisible] = useState();
+    //const [timeString, setTimeString] = useState(new Date());
+    //const [visible, setVisible] = useState();
     const dateString = "Wed Aug 11 2021 00:00:00 GMT+0200 (Central European Summer Time)";
     const [timer, setTimer] = useState("00:00:00");
     const [isPaused, setIsPaused] = useState(true);
 
-    useEffect(() => {
+  /*   useEffect(() => {
         let clockTimer;
         if (visible) {
             clockTimer = setInterval(() => {
@@ -59,7 +59,7 @@ export default function TimerHooks() {
             console.log('------------------------------------');
             clearInterval(clockTimer)
         }
-    }, [visible])
+    }, [visible]) */
 
 
     useEffect(() => {

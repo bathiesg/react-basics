@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
 class Time extends Component {
-    constructor(props){
-        super(props);
-    }
-
+  
     componentWillUnmount() {
         console.log(3,'El componente esta eliminado del DOM');
     }

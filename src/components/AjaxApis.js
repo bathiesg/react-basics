@@ -37,11 +37,13 @@ export default class AjaxApis extends Component {
            return  'Loading...'
         } else {
             this.state.pokemons.map(pokemon => {
+                return(
                 <Pokemons
                     key={pokemon.id}
                     name={pokemon.name}
                     avatar={pokemon.avatar}
                 />
+                )
             })
         }
     }
